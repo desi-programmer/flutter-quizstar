@@ -1,0 +1,88 @@
+[
+    {
+        "1": "What Will Be The Output Of the Following Code ?\nif(1 + 1 + 1 + 1 + 1 == 5){\n\tSystem.out.print(\"TRUE\");\n}\n\telse{\n\tSystem.out.print(\"FALSE\");\n};",
+        "2": "Which function finds out the Variable type in Python ? 2",
+        "3": "Which of the following keyword is used to define a function in Python ? 3",
+        "4": "Which of the following is a print Function in Python ? 4",
+        "5": "Which function finds out the Variable type in Python ? 5",
+        "6": "Which of the following keyword is used to define a function in Python ? 6",
+        "7": "Which function finds out the Variable type in Python ? 7",
+        "8": "Which of the following keyword is used to define a function in Python ?  8",
+        "9": "Which function finds out the Variable type in Python ? 9",
+        "10": "Which of the following keyword is used to define a function in Python ? 10"
+    },
+    {
+        "1": {
+            "a": "TRUE",
+            "b": "BOTH",
+            "c": "ERROR",
+            "d": "FALSE"
+        },
+        "2": {
+            "a": "typedef",
+            "b": "typeof",
+            "c": "type",
+            "d": "find"
+        },
+        "3": {
+            "a": "func",
+            "b": "def",
+            "c": "void",
+            "d": "function"
+        },
+        "4": {
+            "a": "cout",
+            "b": "print",
+            "c": "println",
+            "d": "stderr"
+        },
+        "5": {
+            "a": "typedef",
+            "b": "typeof",
+            "c": "type",
+            "d": "find"
+        },
+        "6": {
+            "a": "func",
+            "b": "def",
+            "c": "void",
+            "d": "function"
+        },
+        "7": {
+            "a": "typedef",
+            "b": "typeof",
+            "c": "type",
+            "d": "find"
+        },
+        "8": {
+            "a": "func",
+            "b": "def",
+            "c": "void",
+            "d": "function"
+        },
+        "9": {
+            "a": "typedef",
+            "b": "typeof",
+            "c": "type",
+            "d": "find"
+        },
+        "10": {
+            "a": "func",
+            "b": "def",
+            "c": "void",
+            "d": "function"
+        }
+    },
+    {
+        "1": "TRUE",
+        "2": "type",
+        "3": "def",
+        "4": "print",
+        "5": "type",
+        "6": "def",
+        "7": "type",
+        "8": "def",
+        "9": "type",
+        "10": "def"
+    }
+]
