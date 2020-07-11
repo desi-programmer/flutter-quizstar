@@ -57,7 +57,7 @@ class getjson extends StatelessWidget {
 }
 
 class quizpage extends StatefulWidget {
-  var mydata;
+  final List mydata;
 
   quizpage({Key key, @required this.mydata}) : super(key: key);
   @override
@@ -65,7 +65,7 @@ class quizpage extends StatefulWidget {
 }
 
 class _quizpageState extends State<quizpage> {
-  var mydata;
+  final List mydata;
   _quizpageState(this.mydata);
 
   Color colortoshow = Colors.indigoAccent;
