@@ -104,6 +104,8 @@ And a lot more...
 
 1. Solved An Issue Of Cheating LoopHole : https://github.com/desi-programmer/flutter-quizstar/issues/2
 
+2. Disabled Multiple Button Pressed After Answering
+
 ## **Changelog/Commit 05**
 
 *Coming Soon*
