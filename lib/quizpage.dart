@@ -37,7 +37,7 @@ class getjson extends StatelessWidget {
     // and now we return the FutureBuilder to load and decode JSON
     return FutureBuilder(
       future:
-          DefaultAssetBundle.of(context).loadString(assettoload, cache: true),
+          DefaultAssetBundle.of(context).loadString(assettoload, cache: false),
       builder: (context, snapshot) {
         List mydata = json.decode(snapshot.data.toString());
         if (mydata == null) {
@@ -73,6 +73,7 @@ class _quizpageState extends State<quizpage> {
   Color wrong = Colors.red;
   int marks = 0;
   int i = 1;
+  bool disableAnswer = false;
   // extra varibale to iterate
   int j = 1;
   int timer = 30;
@@ -173,11 +174,13 @@ class _quizpageState extends State<quizpage> {
       btncolor["b"] = Colors.indigoAccent;
       btncolor["c"] = Colors.indigoAccent;
       btncolor["d"] = Colors.indigoAccent;
+      disableAnswer = false;
     });
     starttimer();
   }
 
   void checkanswer(String k) {
+    
     // in the previous version this was
     // mydata[2]["1"] == mydata[1]["1"][k]
     // which i forgot to change
@@ -197,10 +200,11 @@ class _quizpageState extends State<quizpage> {
       // applying the changed color to the particular button that was selected
       btncolor[k] = colortoshow;
       canceltimer = true;
+      disableAnswer = true;
     });
-
+    // nextquestion();
     // changed timer duration to 1 second
-    Timer(Duration(seconds: 1), nextquestion);
+    Timer(Duration(seconds: 2), nextquestion);
   }
 
   Widget choicebutton(String k) {
@@ -274,19 +278,22 @@ class _quizpageState extends State<quizpage> {
               ),
             ),
             Expanded(
-              flex: 6,
-              child: Container(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    choicebutton('a'),
-                    choicebutton('b'),
-                    choicebutton('c'),
-                    choicebutton('d'),
-                  ],
+                flex: 6,
+                child: AbsorbPointer(
+                  absorbing: disableAnswer,
+                    child: Container(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        choicebutton('a'),
+                        choicebutton('b'),
+                        choicebutton('c'),
+                        choicebutton('d'),
+                      ],
+                    ),
+                  ),
                 ),
               ),
-            ),
             Expanded(
               flex: 1,
               child: Container(
