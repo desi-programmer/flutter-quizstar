@@ -102,4 +102,8 @@ And a lot more...
 
 ## **Changelog/Commit 04**
 
+1. Solved An Issue Of Cheating LoopHole : https://github.com/desi-programmer/flutter-quizstar/issues/2
+
+## **Changelog/Commit 05**
+
 *Coming Soon*
