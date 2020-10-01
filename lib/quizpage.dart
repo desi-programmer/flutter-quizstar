@@ -162,7 +162,7 @@ class _quizpageState extends State<quizpage> {
     canceltimer = false;
     timer = 30;
     setState(() {
-      if (j < 10) {
+      if (j < 9) {
         i = random_array[j];
         j++;
       } else {
