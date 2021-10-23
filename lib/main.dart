@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
       title: "Quizstar",
       theme: ThemeData(
         primarySwatch: Colors.indigo,
+        accentColor: Colors.deepOrange,
       ),
       home: splashscreen(),
     );
