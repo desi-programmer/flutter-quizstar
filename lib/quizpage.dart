@@ -240,8 +240,8 @@ class _quizpageState extends State<quizpage> {
     SystemChrome.setPreferredOrientations(
         [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]);
     return WillPopScope(
-      onWillPop: () {
-        return showDialog(
+      onWillPop: () async{
+        return await showDialog(
             context: context,
             builder: (context) => AlertDialog(
                   title: Text(
